@@ -27,20 +27,22 @@ Make sure you can hop on to your lxplus account.
 First two steps are for Mac users. Windows user should use Putty to login to lxplus. Preferable for windows.
 
 In your console use:
-*   `kinit [username]@cern.ch`
-*   `ssh -Y [username]@lxplus.cern.ch` 
-*   Use your lxplus password.
-*   `ssh -Y [username]@cmsusr`
-*   Use your cmsusr password.
-
+```
+kinit [username]@cern.ch
+ssh -Y [username]@lxplus.cern.ch 
+<lxplus password>
+ssh -Y [username]@cmsusr
+<cmsusr password>
+```
 #### Method 2
 Only for Mac users. Works for windows users as well, but basically comes out to be same as the previous method.
 
 In your console use:
-*  `kinit [username]@cern.ch`
-*  `ssh -tt -Y [username]@lxplus.cern.ch ssh -tt -Y [username]@cmsusr`
-*  Use your cmsusr password.
-
+```
+kinit [username]@cern.ch
+ssh -tt -Y [username]@lxplus.cern.ch ssh -tt -Y [username]@cmsusr
+<cmsusr password>
+```
 
 #### Changing Password
 If this is your first time of accessing your `cmsusr`, command to change your password after logging in. Enter the following command in your console:
