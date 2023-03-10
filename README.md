@@ -1,6 +1,6 @@
 # KU DAQ System
 
-This repository contains code that will be used to moniter the Front-End Drivers for the CMS detector. These instructions may differ for iOS users.
+This repository contains code that will be used to monitor the Front-End Drivers for the CMS detector. These instructions may differ based on your OS.
 
 ## Reminders Before Your Move Forward:
 
@@ -44,26 +44,24 @@ In your console use:
 
 #### Changing Password
 If this is your first time of accessing your `cmsusr`, command to change your password after logging in. Enter the following command in your console:
-
-`kpasswd`
+```
+kpasswd
+```
 
 You will be prompted to enter your current/temporary password and then for your desired password.
 
 ### Accessing DAQ Host
 #### Method 1: 
-
-kinit caleb@CERN.CH 
-
-ssh -Y caleb@lxplus.cern.ch 
-
+```
+kinit [username]@CERN.CH 
+ssh -Y [username]@lxplus.cern.ch 
 ssh -Y local14chstack@fpixp1hc 
-
-Use this password: localDAQ$ 
+```
 
 #### Method 2: 
+```
+kinit [username]@CERN.CH 
+ssh -tt -Y [username]@lxplus.cern.ch ssh -tt -Y local14chstack@fpixp1hc 
+```
+Note: please contact someone working on CMS pixel DAQ for the password to login to fpixp1hc.
 
-kinit caleb@CERN.CH 
-
-ssh -tt -Y caleb@lxplus.cern.ch ssh -tt -Y local14chstack@fpixp1hc 
-
-Use this password: localDAQ$ 
