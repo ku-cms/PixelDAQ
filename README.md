@@ -67,3 +67,17 @@ ssh -tt -Y [username]@lxplus.cern.ch ssh -tt -Y local14chstack@fpixp1hc
 ```
 Note: please contact someone working on CMS pixel DAQ for the password to login to fpixp1hc.
 
+# Helpful Links
+
+
+
+*   [Operating the FPix test-setup](https://twiki.cern.ch/twiki/bin/viewauth/CMS/14ChannelStack )
+*   [Pixel Online Software](https://gitlab.cern.ch/cmspops/pos )
+*   [Pixel Online Software Installation](https://twiki.cern.ch/twiki/bin/viewauth/CMS/PixelOnlineSoftwareInstallation)
+*   [Pixel Remote Connections](https://twiki.cern.ch/twiki/bin/view/CMS/PixelRemoteConnections )
+*   [Pixel Infrastructure](https://twiki.cern.ch/twiki/bin/view/CMS/PixelInfrastructure)
+*   [.CMS Cluster user's guide](https://twiki.cern.ch/twiki/bin/viewauth/CMS/ClusterUsersGuide )
+*   [FED Software](https://gitlab.cern.ch/cmspos/FecSoftware )
+*   [Pixel DAQ Info](https://github.com/ku-cms/PixelDAQ )
+*   [Git Info](https://github.com/caleb-james-smith/git-commands )
+*   [Port forwarding for Windows using Putty](https://sysnews.ma.ic.ac.uk/ssh/port-forwarding-for-Windows-using-PuTTY.html )
