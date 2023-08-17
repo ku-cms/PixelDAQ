@@ -1,0 +1,33 @@
+<?xml version='1.0'?>
+<xp:Profile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xp="http://xdaq.web.cern.ch/xdaq/xsd/2005/XMLProfile-10">
+  <!-- Compulsory  Plugins -->
+  ...
+  <!-- XPlore requires the installation of Power Pack  -->
+  <xp:Application class="xplore::Application" id="9" network="local"
+      service="xplore" >
+    <properties xmlns="urn:xdaq-application:xplore::Application"
+      xsi:type="soapenc:Struct">
+    </properties>
+  </xp:Application>
+  <xp:Module>${XDAQ_ROOT}/lib/libslp.so</xp:Module>
+  <xp:Module>${XDAQ_ROOT}/lib/libxslp.so</xp:Module>
+  <xp:Module>${XDAQ_ROOT}/lib/libxplore.so</xp:Module>
+<!-- XMAS Probe -->
+  <xp:Application class="xmas::probe::Application" id=”10” network="local"
+group="level0" service="xmasprobe">
+    <properties xmlns="urn:xdaq-application:xmas::probe::Application"
+xsi:type="soapenc:Struct">
+      <autoConfigure xsi:type="xsd:boolean">true</autoConfigure>
+      <autoConfSearchPath xsi:type="xsd:string">
+http://xdaq.web.cern.ch/xdaq/setup/${XDAQ_ZONE}/sensor
+</autoConfSearchPath>
+      <sensordURL xsi:type="xsd:string">SENSORD_URL</sensordURL>
+    </properties>
+  </xp:Application>
+  <xp:Module>${XDAQ_ROOT}/lib/libb2inutils.so</xp:Module>
+  <xp:Module>${XDAQ_ROOT}/lib/libwsaddressing.so</xp:Module>
+  <xp:Module>${XDAQ_ROOT}/lib/libxmasutils.so</xp:Module>
+  <xp:Module>${XDAQ_ROOT}/lib/libxmasprobe.so</xp:Module>
+</xp:Profile>
